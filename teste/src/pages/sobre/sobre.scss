@@ -1,0 +1,37 @@
+page-sobre {
+	.toolbar-background {
+  		background-color: #7a00ab;
+	}
+
+	.toolbar-title-md, .toolbar-title-ios{
+		margin-left: auto;
+		font-weight: 300 !important;
+		color: #fff;
+	}
+
+	.button-inner, .bar-button-default-ios {
+		color: #fff;
+		font-weight: bold;
+	}
+
+	.header-sobre{
+		box-shadow: 0px 3px 18px #000000a8;
+	}.header-titulo div{
+		font-size: 16px !important;
+		font-weight: 400 !important;
+		padding-bottom: 5px;
+		margin: 0 25%;
+	}
+
+	.menu-logo {
+		padding-left: 10px;
+		margin: 8% 30% 0;
+	}
+
+	.texto {
+		text-align: center;
+    	font-weight: bold;
+    	font-size: 17px;
+    	padding: 0 5px;
+	}
+}

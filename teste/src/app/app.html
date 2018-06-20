@@ -1,0 +1,21 @@
+<ion-menu [content]="content">
+  <ion-header class="menu-header">
+    <ion-toolbar>
+      <img class="menu-logo" src="../assets/imgs/logo-menu.png">
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu">
+    <ion-list class="menu-lista">
+      <button class="menu-lista-botao" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      <a class="item-block item-md menu-lista-botao input-wrapper lista-botao-link" href="https://avecbrasil.com.br/" onclick="window.open(this.href, '_system');return false;">Site
+      </a>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

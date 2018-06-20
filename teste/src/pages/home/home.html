@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="header-titulo">AVEC</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="carrossel">
+  <ion-slides class="carrossel-slide" pager="true">
+    <ion-slide *ngFor="let post of posts">
+      <img src="{{'https://static.salaovip.com.br/saloes/vip/galeria/originais/' + post.foto}}"/>
+    </ion-slide>
+  </ion-slides>
+
+  <p class="texto">
+    Bem vindo ao nosso aplicativo. Acima você pode rolar as imagens e ver algumas de nossas fotos, no menu você pode acessar nosso links rápidos e abaixo você pode seguir nossas redes sociais. Obrigado.
+  </p>
+
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <a href="https://www.facebook.com/AvecBrasil/" (click)="loginWithFacebook();">
+          <ion-img class="redes-sociais" src="../../assets/imgs/icone-facebook.jpg"></ion-img>
+        </a>
+      </ion-col>
+      <ion-col>
+       <a href="https://www.linkedin.com/company/3271088/" onclick="window.open(this.href, '_system');return false;">
+        <ion-img class="redes-sociais" src="../../assets/imgs/icone-linkedin.jpg"></ion-img>
+        </a>
+      </ion-col>
+      <ion-col>
+        <a href="https://www.instagram.com/avecbrasil/" onclick="window.open(this.href, '_system');return false;">
+          <ion-img class="redes-sociais" src="../../assets/imgs/icone-instagram.jpg"></ion-img>
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
